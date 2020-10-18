@@ -1,0 +1,3 @@
+#!/bin/bash
+
+nvcc Steereocam_Depth_Detectnet.cu -o test -g -L/usr/local/taraxl-opencv/lib -L/usr/local/taraxl-sdk/lib -L/home/alex/jetson-inference/build/aarch64/lib -I /usr/local/taraxl-opencv/include -I /usr/local/taraxl-sdk/include -I /home/alex/jetson-inference/c -I /home/alex/jetson-inference/utils/cuda -I /home/alex/jetson-inference/utils/video -I /home/alex/jetson-inference/utils/image -I /home/alex/jetson-inference/utils -lopencv_videoio -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_calib3d -lopencv_ximgproc -lopencv_imgcodecs -lopencv_cudastereo -lecon_taraxl -ljetson-inference -ljetson-utils
